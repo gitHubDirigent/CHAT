@@ -1,13 +1,13 @@
 import { Routes, RouterModule } from "@angular/router";
 
-import { ChatComponent } from "./chatPart/chat-part.component";
-import { LoginComponent } from "./loginPart/login-part.component";
+import { ChatPartComponent } from "./chatPart/ChatPart.component";
+import { LoginPartComponent } from "./loginPart/LoginPart.component";
 
 
 const APP_ROUTES: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full'},
-  { path: 'login', component: LoginComponent }
-  { path: 'chat', component: ChatComponent }
+  { path: 'login', component: LoginPartComponent },
+  { path: 'chat', component: ChatPartComponent }
 ];
 
 export const routing = RouterModule.forRoot(APP_ROUTES);
