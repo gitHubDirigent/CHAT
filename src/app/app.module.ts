@@ -4,7 +4,10 @@ import { NgModule } from "@angular/core";
 import { AppComponent } from "./app.component";
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent,
+				 LoginComponent,
+				 ChatComponent
+				],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent]
