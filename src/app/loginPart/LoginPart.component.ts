@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 
 @Component({
   selector: "loginPart",
-  templateUrl: "login-part.component.html"
+  templateUrl: "LoginPartComponent.component.html"
 })
 export class LoginPartComponent {
 }
