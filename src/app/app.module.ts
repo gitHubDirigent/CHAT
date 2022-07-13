@@ -9,20 +9,25 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LoginPartComponent } from "./loginPart/LoginPart.component";
 import { ChatPartComponent } from "./chatPart/ChatPart.component";
+import { HeaderComponent } from "./HeaderComponent.component";
+import { MessageComponent } from "./MessageService.component";
 //import { ChatService } from "./chatPart/ChatService.component";
 
 @NgModule({
   declarations: [
-	AppComponent, 	
+	AppComponent,
+	HeaderComponent,
 	LoginPartComponent, 
 	ChatPartComponent
 	],
   imports: [
     BrowserModule, 
     FormsModule, 
-    routing
+	ReactiveFormsModule,
+    routing,
+	HttpModule
 	],
-  providers: [//ChatService
+  providers: [//MessageService, UserListService, UserService
   ],
   bootstrap: [AppComponent]
 })
