@@ -12,8 +12,16 @@ import { ChatPartComponent } from "./chatPart/ChatPart.component";
 //import { ChatService } from "./chatPart/ChatService.component";
 
 @NgModule({
-  declarations: [AppComponent, LoginPartComponent, ChatPartComponent],
-  imports: [BrowserModule, FormsModule, routing],
+  declarations: [
+	AppComponent, 	
+	LoginPartComponent, 
+	ChatPartComponent
+	],
+  imports: [
+    BrowserModule, 
+    FormsModule, 
+    routing
+	],
   providers: [//ChatService
   ],
   bootstrap: [AppComponent]
