@@ -4,19 +4,19 @@ import { NgModule } from "@angular/core";
 import { routing } from "./app.routing";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { RouterModule } from '@angular/router';
-
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { LoginPartComponent } from "./loginPart/LoginPart.component";
 import { ChatPartComponent } from "./chatPart/ChatPart.component";
-import { HeaderComponent } from "./HeaderComponent.component";
-import { MessageComponent } from "./MessageService.component";
+import { MessageComponent } from "./chatPart/MessageService.component";
 //import { ChatService } from "./chatPart/ChatService.component";
+//import { HeaderComponent } from "./HeaderComponent.component";
 
 @NgModule({
   declarations: [
 	AppComponent,
-	HeaderComponent,
+//	HeaderComponent,
 	LoginPartComponent, 
 	ChatPartComponent
 	],
@@ -27,7 +27,7 @@ import { MessageComponent } from "./MessageService.component";
     routing,
 	HttpModule
 	],
-  providers: [//MessageService, UserListService, UserService
+  providers: [MessageService //, UserListService, UserService
   ],
   bootstrap: [AppComponent]
 })
