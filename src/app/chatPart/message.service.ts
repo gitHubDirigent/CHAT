@@ -1,7 +1,7 @@
 import {Headers } from "@angular/http";
 import {Injectable} from "@angular/core";
 
-import {Message } from "./ChatPart.model";
+import {Message} from "./ChatPart.model";
 
 
 @Injectable()
