@@ -13,6 +13,8 @@ import { ChatPartComponent } from "./chatPart/ChatPart.component";
 //import { ChatService } from "./chatPart/ChatService.component";
 //import { HeaderComponent } from "./HeaderComponent.component";
 
+
+
 @NgModule({
   declarations: [
 	AppComponent,
