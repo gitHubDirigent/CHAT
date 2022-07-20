@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { MessageComponent } from "./chatPart/MessageService";
+import { MessageService } from "./chatPart/message.service";
 import { LoginPartComponent } from "./loginPart/LoginPart.component";
 import { ChatPartComponent } from "./chatPart/ChatPart.component";
 //import { ChatService } from "./chatPart/ChatService.component";
